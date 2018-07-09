@@ -96,7 +96,7 @@ h2:after {
 .long-copy {
     line-height: 145%;
     width: 75%;
-    margin: 40px 15% 40px 15%;  
+    margin-left: 15%;
 }
 
 
@@ -185,4 +185,52 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/* ------------------------------------------------*/
+/* FEATURES                                        */
+/* ------------------------------------------------*/
+.section-features .long-copy {
+    margin-bottom: 40px;
+}
+
+/* ------------------------------------------------*/
+/* MEALS SHOWCASE                                  */
+/* ------------------------------------------------*/
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;    
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    /* Avoid scale in images to overflow the container */
+    overflow: hidden;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.2s;
+}
+
+.meal-photo img:hover {
+    /* Trick to avoid the small padding in the bottom due to scale to
+    original size (1) */
+    transform: scale(1.03);
+    opacity: 1;
 }
