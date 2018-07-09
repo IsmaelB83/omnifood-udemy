@@ -161,6 +161,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;  /* Image stays fixed while scrolling */
     height: 100vh;
 }
 
@@ -336,4 +337,47 @@ header {
 .card a:active {
     color: #555;
     border-bottom: 1px solid transparent;
+}
+
+/* ------------------------------------------------*/
+/* TESTIMONIALS                                    */
+/* ------------------------------------------------*/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../../resources/img/back-customers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    text-align: left;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -6px;
+}
+
+blockquote cite {
+    font-size: 90%;
+    margin-top: 10px;
+    display: block;
+}
+
+blockquote img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
