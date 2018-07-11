@@ -1,7 +1,17 @@
 /* ------------------------------------------------*/
 /* BASIC SETUP                                     */
 /* ------------------------------------------------*/
-/* Orange Color: #e67e22;
+:root {
+    --regular-bg: #fff;
+    --second-bg:  #f4f4f4;
+    --h1-color: #fff;
+    --font-color: #555;
+    --main-color: #e67e22;
+    --main-color-hover: #cf6d17;
+    --footer-bg: #333;
+    --footer-text: #9B9B9B;
+    --footer-text-hover: #ddd
+}
 
 /* ------------------------------------------------*/
 /* BASIC SETUP                                     */
@@ -14,8 +24,8 @@
 }
 
 html {
-    background-color: #fff;
-    color: #555;
+    background-color: var(--regular-bg);
+    color: var(--font-color);
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -55,7 +65,7 @@ h1, h2, h3 {
 h1 {
     margin-top: 0px;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--h1-color);
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -76,7 +86,7 @@ h3 {
 
 h2:after {
     display: block;
-    background-color: #e67e22;
+    background-color: var(--main-color);
     content: " ";
     height: 2px;
     width: 100px;
@@ -98,7 +108,7 @@ h2:after {
 .icon-big {
     font-size: 300%;
     display: block;
-    color: #e67e22;
+    color: var(--main-color);
     margin-bottom: 10px;
     font-weight: 300;
 }
@@ -107,7 +117,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: var(--main-color);
     font-size: 120%;
     margin-right: 10px;
     
@@ -137,30 +147,30 @@ h2:after {
 }
 
 .btn-full:link, .btn-full:visited, input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
-    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: var(--regular-bg);
     margin-right: 15px;
 }
 
 .btn-ghost:link, .btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 
 .btn:hover, .btn:active, 
 input[type=submit]:hover, input[type=submit]:active {
-    background-color: #cf6d17;
+    background-color: var(--main-color-hover);
 }
 
 .btn-full:hover, .btn-full:active, 
 input[type=submit]:hover, input[type=submit]:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid var(--main-color-hover);
 }
 
 .btn-ghost:hover, .btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
+    border: 1px solid var(--main-color-hover);
+    color: var(--regular-bg);
 }
 
 .btn-app img {
@@ -174,7 +184,7 @@ input[type=submit]:hover, input[type=submit]:active {
 
 a:link,
 a:visited {
-    color: #e67e22;
+    color: var(--main-color);
     text-decoration: none;
     padding-bottom: 1px;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
@@ -183,7 +193,7 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #555;
+    color: var(--font-color);
     border-bottom: 1px solid transparent;
 }
 
@@ -231,7 +241,7 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    color: #fff;
+    color: var(--regular-bg);
     text-decoration: none;
     font-size: 90%;
     text-transform: uppercase;
@@ -242,7 +252,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid var(--main-color);
 }
 
 /* ------------------------------------------------*/
@@ -302,7 +312,7 @@ header {
 /* HOW IT WORKS                                    */
 /* ------------------------------------------------*/
 .section-steps {
-    background-color: #f4f4f4;
+    background-color: var(--second-bg);
 }
 
 .steps-box:first-child {
@@ -329,8 +339,8 @@ header {
 }
 
 .works-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius: 50%;
     height: 55px;
     width: 55px;
@@ -364,7 +374,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
+    color: var(--regular-bg);
 }
 
 blockquote {
@@ -403,11 +413,11 @@ cite img {
 /* SIGN UP                                         */
 /* ------------------------------------------------*/
 .section-plans {
-    background-color: #f4f4f4;
+    background-color: var(--second-bg);
 }
 
 .plan-box {
-    background-color: #fff;
+    background-color: var(--regular-bg);
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
@@ -421,7 +431,7 @@ cite img {
 }
 
 .plan-box div:first-child {
-    background-color: #fcfcfc;
+    background-color: var(--second-bg);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -440,7 +450,7 @@ cite img {
 }
 
 .plan-box ul li i {
-    color: #e67e22;
+    color: var(--main-color);
     margin-right: 20px;
 }
 
@@ -448,7 +458,7 @@ cite img {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #e67e22
+    color: --main-color
 }
 
 .plan-price span {
@@ -475,7 +485,7 @@ textarea {
     width: 100%;
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid #ccc; 
+    border: 1px solid var(--footer-text);
 }
 
 textarea {
@@ -494,8 +504,8 @@ input[type=checkbox] {
 /* FOOTER                                          */
 /* ------------------------------------------------*/
 footer {
-    background-color: #333;
-    color: #9B9B9B;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     padding: 50px;
     font-size: 80%;
 }
@@ -503,11 +513,12 @@ footer {
 footer a:link, 
 footer a:visited {
     text-decoration: none;
-    color: #888;
+    color: var(--footer-text);
 }
 
 footer a:hover {
-    color: #ddd;
+    color: var(--footer-text-hover);
+    border: none;
 }
 
 footer ul {
@@ -532,12 +543,6 @@ footer p {
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 30px;
-}
-
-footer p i {
-    color: red;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .social-links {
