@@ -473,3 +473,85 @@ input[type=checkbox] {
 *:focus {
     outline: none;
 }
+
+/* ------------------------------------------------*/
+/* FOOTER                                          */
+/* ------------------------------------------------*/
+footer {
+    background-color: #333;
+    color: #9B9B9B;
+    padding: 50px;
+    font-size: 80%;
+}
+
+footer a:link, 
+footer a:visited {
+    text-decoration: none;
+    color: #888;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+.footer-nav {
+    float: left;
+}
+
+footer p {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+
+footer p i {
+    color: red;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.social-links {
+    float: right;
+    font-size: 150%;
+}
+
+.social-links a .ion-social-facebook,
+.social-links a .ion-social-twitter,
+.social-links a .ion-social-googleplus,
+.social-links a .ion-social-instagram { 
+    transition: color 0.2s;
+}
+
+.social-links a:hover .ion-social-facebook,
+.social-links a:active .ion-social-facebook {
+    color: #3B5998;
+}
+
+.social-links a:hover .ion-social-twitter,
+.social-links a:active .ion-social-twitter {
+    color: #00ACED;
+}
+
+.social-links a:hover .ion-social-googleplus,
+.social-links a:active .ion-social-googleplus {
+    color: #DD4B39;
+}
+
+.social-links a:hover .ion-social-instagram, 
+.social-links a:active .ion-social-instagram { 
+    color: #517FA4;
+}
