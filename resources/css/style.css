@@ -86,7 +86,6 @@ h2:after {
 /* ----------- BOX  ----------- */
 .box {
     padding: 1%;
-    text-align: center;
 }
 
 .box p {
@@ -103,6 +102,19 @@ h2:after {
     font-weight: 300;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
 
 /* ------- PARAGRAPHS --------- */
 .long-copy {
@@ -155,6 +167,24 @@ input[type=submit]:hover, input[type=submit]:active {
     margin-right: 10px;
 }
 
+/* -------- LINKS ---------*/
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 /* ------------------------------------------------*/
 /* HEADER                                          */
 /* ------------------------------------------------*/
@@ -186,6 +216,8 @@ header {
     float: right;
     list-style: none;
     margin: 50px;
+    margin-left: 0px;
+    margin-right: 30px;
 }
 
 .main-nav li {
@@ -263,13 +295,13 @@ header {
     background-color: #f4f4f4;
 }
 
-.step-box:first-child {
+.steps-box:first-child {
     text-align: right;
     padding-right: 3%;
     margin-top: 30px;
 }
 
-.step-box:last-child {
+.steps-box:last-child {
     padding-left: 3%;
     margin-top: 70px;
 }
@@ -302,43 +334,14 @@ header {
 /* ------------------------------------------------*/
 /* CITIES                                          */
 /* ------------------------------------------------*/
-.card {
- padding: 10px;
-}
-
-.card img {
+.box img {
     width: 100%;
     height: auto;
+    margin-bottom: 15px;
 }
 
-.card h3 {
-    margin-top: 10px;
-}
-
-.card i {
-    color: #e67e22;
-    margin-right: 10px;
-}
-
-.card p {
-    font-size: 90%;
-    margin-top: 10px;
-    line-height: 145%;
-}
-
-.card a:link,
-.card a:visited {
-    color: #e67e22;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
-    transition: border-bottom 0.2s, color 0.2s;
-}
-
-.card a:hover,
-.card a:active {
-    color: #555;
-    border-bottom: 1px solid transparent;
+.city-feature {
+    margin-bottom: 5px;
 }
 
 /* ------------------------------------------------*/
@@ -371,14 +374,15 @@ blockquote:before {
     left: -6px;
 }
 
-blockquote cite {
+cite {
     font-size: 90%;
     margin-top: 10px;
     display: block;
 }
 
-blockquote img {
-    height: 45px;
+cite img {
+    height: 45px !important;
+    width: auto !important;
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
