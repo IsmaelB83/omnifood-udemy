@@ -55,8 +55,12 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
-    
-    
+
+    /* Like boostrap col-sm-6 */
+    .col-sm-6 { 
+        width: 50%;
+    }
+       
     .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block;}
     
@@ -105,9 +109,18 @@
         font-size: 120%;
     }
     
-    .works-step { margin-bottom: 20px; }
+    .works-step { 
+        margin-bottom: 20px; 
+        float: left;
+    }
+
     .works-step:last-of-type { margin-bottom: 20px; }
     
+    .works-step-buttons {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
 }
 
 
@@ -116,4 +129,10 @@
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0; }
     .contact-form {width: 100%; }
+
+    footer { padding: 30px; text-align: center; }
+    .footer-nav { width: 100%;}
+    .social-links { width: 100%; margin-top: 30px;}
+    footer p { padding: 0;}
 }
+
