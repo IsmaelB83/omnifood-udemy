@@ -88,4 +88,14 @@ $(document).ready(function () {
         offset: '50%'
     });
 
+    /* Collapse nav */
+    $('.js--nav-icon').click(function () {
+        // option 2) var icon = $(".js--nav-icon").children("i");
+        var icon = $(".js--nav-icon i");
+        var nav = $('.js--main-nav');
+        nav.slideToggle(200);
+        icon.toggleClass("ion-navicon-round");
+        icon.toggleClass("ion-close-round");
+    });
+
 });

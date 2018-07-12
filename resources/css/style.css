@@ -266,6 +266,18 @@ header {
     border-bottom: 2px solid var(--main-color);
 }
 
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: white;
+}
+
 /* Sticky navigator */
 .sticky {
     /* Navigation always stays at the top */
