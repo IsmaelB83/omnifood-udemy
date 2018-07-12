@@ -274,7 +274,8 @@ header {
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 1px 1px #FFF;
+    -webkit-box-shadow: 0 1px 1px #FFF;
+            box-shadow: 0 1px 1px #FFF;
     z-index: 9999;
 }
 
@@ -618,4 +619,26 @@ footer p {
 .social-links a:hover .ion-social-instagram, 
 .social-links a:active .ion-social-instagram { 
     color: #517FA4;
+}
+
+/********************************
+ * ANIMATIONS                   *
+ ********************************/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
